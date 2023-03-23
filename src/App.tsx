@@ -55,6 +55,8 @@ export const Utilities = () => {
 
   return {
     restrictSpecialCharacters,
-    restrictNumberSpecialCharacters
+    restrictNumberSpecialCharacters,
+    restrictAlphabetSpecialCharacters,
+    allowNumberWithDot
   }
 }
