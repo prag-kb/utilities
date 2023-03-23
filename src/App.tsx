@@ -29,6 +29,30 @@ export const Utilities = () => {
       }
     } catch (e) {}
   }
+
+  //To allow only numbers
+  function restrictAlphabetSpecialCharacters(e:any) {
+    try{
+      if (/^[0-9\s]*$/.test(e.key)) {
+        return true
+      } else {
+        e.preventDefault()
+        return false
+      }
+    } catch (e) {}
+  }
+
+  function allowNumberWithDot (e:any) {
+    try{
+      if (/^[0-9]*\.?[0-9]*$/.test(e.key)) {
+        return true
+      } else {
+        e.preventDefault()
+        return false
+      }
+    } catch (e) {}
+  }
+
   return {
     restrictSpecialCharacters,
     restrictNumberSpecialCharacters
