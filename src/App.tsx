@@ -1,7 +1,6 @@
 
-export type CommonResponse = {
-  status?: 'danger' | 'success';
-  message?: string;
+export type UtilitiesType = {
+  restrictSpecialCharacters: ()=> void
 }
 
 export const Utilities = () => {
